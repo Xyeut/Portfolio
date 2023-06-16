@@ -1,0 +1,141 @@
+// * SQUARES
+.square {
+    width: clamp(200px, 20vw, 300px);
+    height: clamp(200px, 20vw, 300px);
+
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid $secondary-color-background;
+
+    animation: rotate 60s linear infinite;
+}
+
+.square-2 {
+    right: 100px;
+    top: -100px;
+}
+
+.square-3 {
+    right: clamp(-15px, 50vw, 150px);
+    top: 15%;
+}
+
+.square-4 {
+    top: 20%;
+    left: -50px;
+}
+
+.square-5 {
+    top: 30%;
+    right: 950px;
+}
+
+.square-6 {
+    top: 44%;
+    left: 100px;
+}
+
+.square-7 {
+    top: 39%;
+    right: -30px;
+}
+
+.square-8 {
+    top: 53%;
+    right: -80px;
+}
+
+.square-9 {
+    top: 76%;
+    left: -60px;
+}
+
+.square-10 {
+    top: 80%;
+    right: 80px;
+}
+
+.square-11 {
+    top: 95%;
+    left: -50px;
+}
+
+.square-12 {
+    top: 95%;
+    right: -100px;
+    z-index: 4;
+}
+
+// * ANIMATIONS
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// * MEDIA QUERIES
+@media screen and (max-width: 768px) {
+    .square-2 {
+        display: none;
+    }
+
+    .square-4 {
+        top: 18%;
+    }
+
+    .square-3 {
+        top: 25%;
+        right: 0;
+    }
+
+    .square-5 {
+        display: none;
+    }
+
+    .square-6 {
+        top: 40%;
+        left: -100px;
+    }
+
+    .square-7 {
+        top: 45%;
+    }
+
+    .square-8 {
+        display: none;
+    }
+
+    .square-9 {
+        display: none;
+    }
+
+    .square-10 {
+        display: none;
+    }
+
+    .square-11 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .square-2 {
+        right: -50px;
+    }
+
+    .square-3 {
+        display: none;
+    }
+
+    .square-7 {
+        display: none;
+    }
+
+    .square-10 {
+        display: none;
+    }
+}

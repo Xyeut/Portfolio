@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary-color;
+}
+
+input {
+    color: $textbox-input;
+    border: 1px solid $text-secondary;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+    font-family: $primary-font;
+    color: $text-primary;
+}
+
+p,
+input,
+label,
+textarea,
+span,
+.noto {
+    font-weight: normal;
+    font-family: $secondary-font;
+
+    color: $text-secondary;
+}
+
+.--highlight {
+    color: $secondary-color;
+    font-family: $primary-font;
+}
+
+h2,
+h2 > .--highlight {
+    font-family: $secondary-font;
+}
+
+svg {
+    color: $text-secondary;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.svg__button {
+    background: transparent;
+
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.button--click {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-word;
+
+    padding: clamp(rem(5), 2vw, rem(10)) clamp(rem(40), 5vw, rem(50));
+
+    font-size: clamp(rem(18), 2vw, rem(22));
+    color: $primary-color;
+    font-family: $primary-font;
+
+    border-radius: 100px;
+    background: $secondary-color;
+
+    svg {
+        color: inherit;
+
+        width: clamp(rem(25), 2vw, rem(35));
+        height: clamp(rem(25), 2vw, rem(35));
+    }
+}
+
+section {
+    position: relative;
+    z-index: 2;
+
+    height: 100dvh;
+    min-height: 600px;
+}
+
+.overlayShown {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.overlay-enter-active,
+.overlay-leave-active {
+    transition: opacity 0.2s ease;
+}
+
+.overlay-enter-from,
+.overlay-leave-to {
+    opacity: 0;
+}
+
+.header--main {
+    font-size: clamp(rem(40), 10vw, rem(76));
+}
+
+.header--subheading {
+    font-size: clamp(rem(20), 4vw, rem(40));
+}
