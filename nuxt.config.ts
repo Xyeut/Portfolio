@@ -23,12 +23,12 @@ export default defineNuxtConfig({
 				},
 				{
 					property: "og:image",
-					content: "https://i.imgur.com/ubA678R.png",
+					content: "https://portfolio.xyeut.dev/assets/meta.png",
 				},
 				{
 					property: "og:description",
 					content:
-						"As a skilled software engineer, my area of expertise involves coming up with original solutions and writing effective code.  I bring a thorough approach, a problem-solving mindset, and a passion for creating seamless user experiences to web applications, mobile development, and beyond. Learn how my experience can advance your digital projects.",
+						"As a skilled software engineer, my area of expertise involves coming up with original solutions and writing effective code.",
 				},
 			],
 			link: [
