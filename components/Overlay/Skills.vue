@@ -48,6 +48,11 @@
                     <Icon name="akar-icons:node-fill" class="skill--icon"></Icon>
                     <span class="skill--label">Node</span>
                 </div>
+                <div class="tech-stack__skill">
+                    <Icon name="simple-icons:lua" class="skill--icon"></Icon>
+                    <span class="skill--label">Lua</span>
+                </div>
+
             </div>
         </div>
     </div>

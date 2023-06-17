@@ -3,7 +3,12 @@
         <div class="contact__heading">
             <h1 class="heading--main">Contact <span class="--highlight">Me</span></h1>
             <h2 class="heading--subheading">Leave a detailed message to <span class="--highlight">get in touch!</span></h2>
+            <p class="contact__paragraph">
+                <Icon name="ic:baseline-phone" /> 720-230-6989
+            </p>
+
         </div>
+
 
         <form action="" class="contact__form">
             <div class="form__container">
@@ -72,6 +77,12 @@ function sendEmail() {
 .heading--subheading {
     font-size: clamp(rem(18), 2vw, rem(35));
     text-align: center;
+}
+
+
+.contact__paragraph {
+    margin-top: 15px;
+    font-size: clamp(rem(18), 2vw, rem(27));
 }
 
 .contact__label {
