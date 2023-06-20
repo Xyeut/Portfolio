@@ -65,6 +65,15 @@ const projects = ref([{
     image: 'RblxTrade',
     view: 'https://rblx.trade/',
     code: ''
+}, {
+    name: "Uber",
+    date: "06/20/2023",
+    skills: ["akar-icons:vue-fill", "vscode-icons:file-type-scss", "skill-icons:figma-dark"],
+    description: "Since this is just a rework of the Uber home page and doesn't require much, I didn't want to do too much. However, I changed the website's appearance and improved its accessibility. The website is responsive and uses nice UI/UX principles.",
+    alt: "Uber",
+    image: "Uber",
+    view: "https://uber.xyeut.dev/",
+    code: 'https://github.com/Xyeut/Uber'
 }
 ])
 
